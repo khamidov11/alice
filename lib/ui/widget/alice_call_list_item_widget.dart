@@ -54,12 +54,12 @@ class AliceCallListItemWidget extends StatelessWidget {
         const Padding(
           padding: EdgeInsets.only(left: 10),
         ),
-        Flexible(
-          // ignore: avoid_unnecessary_containers
+        Expanded(
           child: Container(
             child: Text(
               call.endpoint,
               overflow: TextOverflow.ellipsis,
+              maxLines: 4,
               style: TextStyle(
                 fontSize: 16,
                 color: textColor,
